@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#120003">
+<title>Mehta Family | Ganpati Bappa Morya</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#080003;color:#fff5dc;font-family:Georgia,'Times New Roman',serif}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(circle at 50% 20%,#7a360d55,transparent 34%),linear-gradient(#100003,#240006 48%,#080002)}
+#fx{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:10}
+.spark{position:absolute;width:3px;height:3px;border-radius:50%;background:#ffd36b;box-shadow:0 0 12px #ff9f20;animation:rise linear infinite}
+.petal{position:absolute;font-size:17px;animation:fall linear infinite}
+@keyframes rise{from{transform:translateY(105vh);opacity:0}15%{opacity:.9}85%{opacity:.8}to{transform:translateY(-10vh);opacity:0}}
+@keyframes fall{from{transform:translate(-20px,-10vh) rotate(0);opacity:0}15%{opacity:.8}to{transform:translate(130px,110vh) rotate(520deg);opacity:0}}
+.wrap{width:min(760px,100%);margin:auto;padding:18px 14px 60px}
+.card{overflow:hidden;border:1px solid #d69a3c88;border-radius:28px;background:linear-gradient(#210006f7,#0d0003fa);box-shadow:0 0 80px #b66a1e30}
+.photo{width:100%;background:#080808;line-height:0}
+.photo img{display:block;width:100%;height:auto;max-width:100%;object-fit:contain}
+.content{text-align:center;padding:30px 24px 42px}
+.om{font-size:40px;color:#ffd36b;text-shadow:0 0 18px #ff9d20}
+.mantra{color:#e7bd62;letter-spacing:3px;font-size:15px}
+.badge{display:inline-block;margin:18px 0 10px;padding:8px 20px;border:1px solid #d39a35;border-radius:30px;color:#ffd776;letter-spacing:2px;font-size:14px}
+.invite{font-size:21px;color:#e7d2a7;margin-top:8px}
+.script{font-family:cursive;font-style:italic;font-size:48px;color:#ffe5ad}
+h1{font-size:44px;margin:2px 0;color:#fff0c5}
+.at{font-size:21px;color:#e4cda0}
+.date{font-size:27px;font-weight:bold;color:#ffd06a;margin:22px 0}
+.address{font-size:18px;line-height:1.5;color:#ead7b2;margin:20px auto}
+.map{display:inline-block;text-decoration:none;background:linear-gradient(90deg,#c47b1c,#ffe09b,#c47b1c);color:#270005;padding:12px 24px;border-radius:28px;font-weight:bold}
+.divider{height:1px;background:linear-gradient(90deg,transparent,#d99c3a,transparent);margin:30px 0}
+.from{color:#d9bf89;font-size:17px}.family{font-family:cursive;font-style:italic;font-size:52px;color:#fff0c9}
+.tag{margin-top:7px;color:#cfae6d;letter-spacing:2px;font-size:13px}
+.music{position:fixed;right:18px;bottom:18px;z-index:30;width:58px;height:58px;border-radius:50%;border:1px solid #e0a63f;background:#2b0008;color:#ffd36b;font-size:23px;cursor:pointer;box-shadow:0 0 28px #e5a02e55}
+.opening{position:fixed;inset:0;z-index:50;display:flex;align-items:center;justify-content:center;text-align:center;padding:25px;background:radial-gradient(circle at 50% 40%,#65250d,#110003 68%);transition:.8s}
+.opening.hide{opacity:0;visibility:hidden}
+.gate{max-width:480px}
+.gate .big{font-size:74px;color:#ffd36b;text-shadow:0 0 30px #ff9f20}
+.gate h2{font-size:40px;color:#ffe5ac;margin:12px 0}
+.gate p{font-size:19px;line-height:1.5;color:#e6cda0}
+.enter{border:1px solid #d99a36;border-radius:30px;padding:14px 32px;background:linear-gradient(90deg,#c2771a,#ffe09c,#c2771a);color:#270005;font-weight:bold;font-size:18px;cursor:pointer;box-shadow:0 0 30px #e5a02e44}
+.footer{text-align:center;color:#b79357;font-size:13px;letter-spacing:1px;padding:25px 10px}
+@media(max-width:600px){.wrap{padding:0 0 50px}.card{border-radius:0}.content{padding:25px 18px 38px}h1{font-size:36px}.script{font-size:42px}.date{font-size:23px}.address{font-size:16px}}
+</style>
+</head>
+<body>
+<div id="fx"></div>
+
+<div class="opening" id="opening">
+  <div class="gate">
+    <div class="big">ॐ</div>
+    <div class="mantra">|| गणपती बाप्पा मोरया ||</div>
+    <h2>Mehta Family</h2>
+    <p>With devotion and happiness, we invite you to celebrate our<br><b>5th Year of welcoming Bappa home.</b></p>
+    <button class="enter" onclick="enterInvitation()">Enter Invitation</button>
+  </div>
+</div>
+
+<main class="wrap">
+  <section class="card">
+    <div class="photo">
+      <img src="Ganpati_Full.png" alt="Lord Ganesha - Mehta Family">
+    </div>
+
+    <div class="content">
+      <div class="om">ॐ</div>
+      <div class="mantra">ॐ • श्री गणेशाय नमः • ॐ</div>
+      <div class="badge">✨ CELEBRATING OUR 5TH YEAR ✨</div>
+      <div class="invite">You are cordially invited to</div>
+      <div class="script">seek blessings of</div>
+      <h1>Lord Ganesha</h1>
+      <div class="at">at our home</div>
+      <div class="date">14th September to 18th September</div>
+      <div class="address">
+        📍 Adinath Avenue, 1001, 10th Floor A Wing,<br>
+        Narsing Lane, Malad West,<br>
+        Mumbai - 400064
+      </div>
+      <a class="map" target="_blank"
+         href="https://www.google.com/maps/search/?api=1&query=Adinath+Avenue+1001+10th+Floor+A+Wing+Narsing+Lane+Malad+West+Mumbai+400064">
+         📍 Open Location
+      </a>
+      <div class="divider"></div>
+      <div class="from">With love, devotion &amp; happiness</div>
+      <div class="family">Mehta Family</div>
+      <div class="tag">5 YEARS • ONE BAPPA • COUNTLESS BLESSINGS</div>
+      <div class="divider"></div>
+      <div class="mantra">GANPATI BAPPA MORYA • MANGAL MURTI MORYA</div>
+    </div>
+  </section>
+  <div class="footer">🙏 Your presence will make our celebration even more special. ❤️</div>
+</main>
+
+<button class="music" id="music" onclick="toggleMusic()" aria-label="Music">🎵</button>
+
+<audio id="song" loop preload="auto">
+  <source src="Bappa_Wala_Gana_Sanju_Rathod.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const audio=document.getElementById('song');
+const opening=document.getElementById('opening');
+const music=document.getElementById('music');
+
+function enterInvitation(){
+  opening.classList.add('hide');
+  audio.play().then(()=>music.textContent='🔊').catch(()=>{});
+}
+
+function toggleMusic(){
+  if(audio.paused){
+    audio.play().then(()=>music.textContent='🔊').catch(()=>{});
+  }else{
+    audio.pause();
+    music.textContent='🎵';
+  }
+}
+
+const fx=document.getElementById('fx');
+for(let i=0;i<38;i++){
+  const s=document.createElement('i');
+  s.className='spark';
+  s.style.left=Math.random()*100+'vw';
+  s.style.animationDuration=(5+Math.random()*9)+'s';
+  s.style.animationDelay=(-Math.random()*12)+'s';
+  fx.appendChild(s);
+}
+for(let i=0;i<14;i++){
+  const p=document.createElement('span');
+  p.className='petal';
+  p.textContent='🌼';
+  p.style.left=Math.random()*100+'vw';
+  p.style.animationDuration=(7+Math.random()*9)+'s';
+  p.style.animationDelay=(-Math.random()*12)+'s';
+  fx.appendChild(p);
+}
+</script>
+</body>
+</html>
