@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#120006">
+<title>Mehta Family • Ganpati Bappa Morya</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap');
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#090104;color:#fff7df;font-family:'Cormorant Garamond',serif}
+body:before{content:"";position:fixed;inset:0;background:radial-gradient(circle at 50% 25%,#7c390c33,transparent 32%),radial-gradient(circle at 50% 70%,#bd5b0b16,transparent 45%);pointer-events:none}
+#particles{position:fixed;inset:0;z-index:30;pointer-events:none;overflow:hidden}.spark{position:absolute;width:3px;height:3px;border-radius:50%;background:#ffd46b;box-shadow:0 0 12px #ffb52e;animation:rise linear infinite}
+@keyframes rise{from{transform:translateY(105vh);opacity:0}15%{opacity:1}85%{opacity:.8}to{transform:translateY(-10vh);opacity:0}}
+#opening{position:fixed;inset:0;z-index:100;background:radial-gradient(circle at 50% 42%,#5d220e,#120006 65%);display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;transition:1s}
+#opening.hide{opacity:0;visibility:hidden}.gate{max-width:500px}.om{font-size:76px;color:#ffd36d;text-shadow:0 0 30px #ff9f27}
+.small{letter-spacing:4px;color:#e9c67e;font-size:14px}.gate h1{font-size:42px;margin:14px 0 4px;color:#ffe7ac}.gate p{font-size:20px;color:#e4c99a;line-height:1.5}
+.enter{border:1px solid #e6a938;border-radius:40px;padding:15px 30px;background:linear-gradient(90deg,#b86c17,#ffe1a0,#b86c17);background-size:200%;color:#280006;font-size:18px;font-weight:700;cursor:pointer;box-shadow:0 0 35px #e7952838}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:35px 18px;position:relative}
+.card{width:min(700px,96vw);background:linear-gradient(180deg,#230006f2,#100003f5);border:1px solid #c88a2e99;border-radius:32px;overflow:hidden;box-shadow:0 0 80px #b96a1e22,0 0 0 1px #ffd46b18 inset}
+.photo{position:relative;background:#080808}.photo img{display:block;width:100%;max-height:78vh;object-fit:cover;object-position:center;filter:saturate(1.04)}
+.photo:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 62%,#230006 100%)}
+.content{text-align:center;padding:5px 30px 42px;position:relative}
+.mantra{color:#e9b956;letter-spacing:3px;font-size:16px}.fifth{display:inline-block;margin:15px 0 8px;border:1px solid #c98b2e;border-radius:30px;padding:8px 19px;color:#ffd979;letter-spacing:2px;font-size:14px}
+.invite{font-size:22px;color:#eedbb0;margin-top:10px}.script{font-family:'Great Vibes',cursive;font-size:55px;color:#ffe4a5;margin:0}h2{font-size:49px;line-height:1;margin:0;color:#fff0c5;font-weight:600}
+.at{font-size:21px;color:#e8d2a3;margin:8px}.date{font-size:28px;color:#ffd16b;font-weight:700;margin:20px 0}
+.address{font-size:18px;line-height:1.45;color:#ead8b4;margin:22px auto;max-width:560px}
+.map{display:inline-block;text-decoration:none;color:#250006;background:linear-gradient(90deg,#d38a24,#ffe2a0,#d38a24);background-size:200%;padding:12px 25px;border-radius:28px;font-weight:700;animation:shine 3s linear infinite}
+@keyframes shine{to{background-position:200%}}
+.divider{height:1px;background:linear-gradient(90deg,transparent,#d69a36,transparent);margin:28px 0}.from{font-size:17px;color:#d8bd84}.family{font-family:'Great Vibes',cursive;font-size:53px;color:#fff0ca}
+.tag{font-size:14px;letter-spacing:2px;color:#d6b777;margin-top:8px}.musicbar{position:fixed;right:18px;bottom:18px;z-index:60;border:1px solid #dba43d;background:#280007;color:#ffd36d;border-radius:50%;width:56px;height:56px;font-size:23px;cursor:pointer;box-shadow:0 0 25px #e8a52e44}
+.footer{text-align:center;padding:30px 10px 45px;color:#b89558;letter-spacing:1px;font-size:13px}
+@media(max-width:600px){.content{padding-left:20px;padding-right:20px}.script{font-size:46px}h2{font-size:38px}.date{font-size:23px}.address{font-size:16px}}
+</style>
+</head>
+<body>
+<div id="particles"></div>
+
+<div id="opening">
+ <div class="gate">
+  <div class="om">ॐ</div>
+  <div class="small">|| गणपती बाप्पा मोरया ||</div>
+  <h1>Mehta Family</h1>
+  <p>With devotion and happiness, we invite you to celebrate our<br><b>5th Year of welcoming Bappa home.</b></p>
+  <button class="enter" onclick="start()">🙏 Enter Invitation & Play Bappa Wala Gana</button>
+ </div>
+</div>
+
+<section class="hero">
+ <div class="card">
+  <div class="photo"><img src="Mehta_Family_Ganpati.png" alt="Lord Ganesha"></div>
+  <div class="content">
+   <div class="mantra">ॐ • श्री गणेशाय नमः • ॐ</div>
+   <div class="fifth">✨ CELEBRATING OUR 5TH YEAR ✨</div>
+   <div class="invite">You are cordially invited to</div>
+   <div class="script">seek blessings of</div>
+   <h2>Lord Ganesha</h2>
+   <div class="at">at our home</div>
+   <div class="date">14th September to 18th September</div>
+   <div class="address">📍 Adinath Avenue, 1001, 10th Floor A Wing,<br>Narsing Lane, Malad West,<br>Mumbai - 400064</div>
+   <a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Adinath+Avenue+1001+10th+Floor+A+Wing+Narsing+Lane+Malad+West+Mumbai+400064">📍 Open Location</a>
+   <div class="divider"></div>
+   <div class="from">With love, devotion &amp; happiness</div>
+   <div class="family">Mehta Family</div>
+   <div class="tag">5 YEARS • ONE BAPPA • COUNTLESS BLESSINGS</div>
+   <div class="divider"></div>
+   <div class="mantra">GANPATI BAPPA MORYA • MANGAL MURTI MORYA</div>
+  </div>
+ </div>
+</section>
+
+<div class="footer">🙏 Your presence will make our celebration even more special. ❤️</div>
+<button class="musicbar" id="music" onclick="toggleMusic()">🎵</button>
+<audio id="song" loop preload="auto"><source src="Bappa_Wala_Gana_Sanju_Rathod.mp3" type="audio/mpeg"></audio>
+
+<script>
+const audio=document.getElementById('song'), opening=document.getElementById('opening'), music=document.getElementById('music');
+function start(){opening.classList.add('hide');audio.play().then(()=>music.textContent='🔊').catch(()=>{});}
+function toggleMusic(){if(audio.paused){audio.play();music.textContent='🔊'}else{audio.pause();music.textContent='🎵'}}
+const p=document.getElementById('particles');
+for(let i=0;i<42;i++){let s=document.createElement('i');s.className='spark';s.style.left=Math.random()*100+'vw';s.style.animationDuration=5+Math.random()*8+'s';s.style.animationDelay=-Math.random()*12+'s';s.style.transform='scale('+(0.5+Math.random()*1.5)+')';p.appendChild(s)}
+</script>
+</body>
+</html>
